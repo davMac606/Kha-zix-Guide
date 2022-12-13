@@ -3921,8 +3921,9 @@ textarea.form-control-lg {
 }
 
 .myContainer {
-    background-color: #2713da93;	
+    background-color: #513fec4f;	
     justify-content: center;	
+    border-radius: 20px;
     
 }
 
