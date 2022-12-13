@@ -640,6 +640,7 @@ progress {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+  justify-content: center;
 }
 
 @media (min-width:576px) {
@@ -3920,26 +3921,32 @@ textarea.form-control-lg {
 }
 
 .myContainer {
-    background-color: #5e5d5d;
-    border-radius: 20px;	
+    background-color: #2713da93;	
     justify-content: center;	
     
 }
 
 #bruiser {
-    background-color: #8329cc93;
+    background-color: rgba(11, 8, 225, 0.3);
     border-radius: 20px;	
-    margin-bottom: 20px;
-    height: 380px;	
+    margin-bottom: 20px;	
+}
+#explica {
+    justify-content: center;
+    text-align: center;
+}
+#bruiser1 {
+    width: auto;
+    max-width: 300px;
+    height: auto;
+    max-height: 300px;
 }
 #intro {
     background-color: white;
-    border-radius: 20px;
-    margin-bottom: 20px;
     text-align: center;
 }
 #desc {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(41, 40, 40);
     justify-content: center;
     height: 380px;
     margin-bottom: 20px;
@@ -6359,8 +6366,9 @@ textarea.form-control-lg {
     color: var(--bs-popover-body-color)
 }
 
-.carousel {
-    position: relative
+.carousel .carousel-item {
+    position: relative;
+    height: 1080px;
 }
 
 .carousel.pointer-event {
@@ -6378,16 +6386,25 @@ textarea.form-control-lg {
     clear: both;
     content: ""
 }
+.carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    display: none;
+    left: 0;
+    min-height: 500px;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform .6s ease-in-out
+}
 
 .carousel-item {
     position: relative;
     display: none;
     float: left;
     width: 100%;
-    margin-right: -100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    transition: transform .6s ease-in-out
+
 }
 
 @media (prefers-reduced-motion:reduce) {
@@ -12304,9 +12321,13 @@ textarea.form-control-lg {
 }
 
 img {
-    height: 300px;
-    width: 400px;
+    width: auto;
+    max-width: 600px;
+    height: auto;
+    max-height: 600px;
     border-radius: 20px;
+    margin-bottom: 20px;
+    
 }
 
 #containerTeste {
