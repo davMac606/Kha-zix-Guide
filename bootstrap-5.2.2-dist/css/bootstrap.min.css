@@ -3927,11 +3927,17 @@ textarea.form-control-lg {
     
 }
 
-#bruiser {
+.texto {
     background-color: rgba(11, 8, 225, 0.3);
     border-radius: 20px;	
-    margin-bottom: 20px;	
+    margin-bottom: 20px;
+    margin-top: 20px;	
 }
+.explicacao {
+margin-bottom: 20px;
+margin-top: 20px;
+}
+
 #explica {
     justify-content: center;
     text-align: center;
@@ -12333,6 +12339,10 @@ img {
 
 #containerTeste {
     float: left;
+}
+
+.imagem {
+    margin-top: 20px;
 }
 
 /*# sourceMappingURL=bootstrap.min.css.map */
